@@ -1,4 +1,4 @@
-# game_of_life
+# Conway's Game of Life
 Martijn van Veen
 
 ## Conway's game of life OOP

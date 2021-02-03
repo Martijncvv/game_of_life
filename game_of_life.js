@@ -15,7 +15,7 @@ All other live cells die in the next generation. Similarly, all other dead cells
 
 // Game settings
 // Nr of blocks in length and width
-let size = 60;
+let size = 25;
 let square_size = 50;
 let canvas_size = size * (square_size + 5) + 20;
 let grid = []
@@ -46,10 +46,10 @@ function draw() {
     /*
     Run game and create visualization of algorithm 
     */
-    background(220);
+    background(255);
     change_states();
     change_node_colour();
-  }
+}
 
 
 function make_grid() {
@@ -107,7 +107,7 @@ function mousePressed() {
     // Get node of mousepress position
     let x_coord = round((mouseX + 15) / (square_size + 5)) - 1;
     let y_coord = round((mouseY + 15) / (square_size + 5)) - 1;
-    let node = grid[x_coord][y_coord]
+    
 
     // Check if user clicked outside grid
     if (x_coord > size || y_coord > size) {
@@ -124,6 +124,7 @@ function mousePressed() {
     }
     // Change state of clicked node
     else {
+        let node = grid[x_coord][y_coord];
         if (node.state) {
             node.state = false;
             node.new_state = false;
@@ -184,9 +185,9 @@ function change_node_colour() {
             size_y = y * (square_size + 5) + 10;
 
             // Check node state and define colour
-            let colour = color(0,0, 255);
+            let colour = color(241, 244, 243);
             if (grid[x][y].state) {
-                colour = color(255, 204, 0);
+                colour = color(20, 172, 230);
             }
             fill(colour);
             rect(size_x, size_y, square_size, square_size);

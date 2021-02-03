@@ -14,7 +14,7 @@ Any dead cell with three live neighbours becomes a live cell.
 All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
 ## How to simulate
-- On default, all nodes are dead.
+- On default a glider pattern will be simulated.
 - Click right of the grid to pause the simulation. 
 - Click nodes you want to 'revive'.
 - Click right of the grid to start simulation.

@@ -30,7 +30,6 @@ class Node {
     }
 }
 
-
 function setup() {
     /*
     Set game settings and create game grid
@@ -39,6 +38,13 @@ function setup() {
     make_grid()
     // Run draw function with a speed of 5 iterations/sec
     frameRate(5)
+
+    // Set default pattern; Glider
+    grid[0][1].new_state = true;
+    grid[1][2].new_state = true;
+    grid[2][0].new_state = true;
+    grid[2][1].new_state = true;
+    grid[2][2].new_state = true;
 }
 
 

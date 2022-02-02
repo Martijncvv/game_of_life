@@ -1,5 +1,5 @@
 # Conway's Game of Life
-Martijn van Veen
+Martijn vv
 
 ## Conway's game of life OOP
 
